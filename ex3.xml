@@ -1,0 +1,13 @@
+<project default = "glob">
+	<target name ="glob" >
+	<touch file="File1.java"/>
+	<touch file="File2.java"/>
+	<touch file="File3.java"/>
+		<copy todir="./backup">
+			<fileset dir="./">
+				<include name="**/*.java" />
+			</fileset>
+		</copy>
+  
+	</target>
+</project>

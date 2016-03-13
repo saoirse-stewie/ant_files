@@ -1,0 +1,7 @@
+<project default = "backup">
+	<target name = "backup" >
+		<touch file = "MyCode.java"/>
+		<mkdir dir = "./backup"/>
+		<copy file = "MyCode.java" todir="./backup"/>
+	</target>
+</project>

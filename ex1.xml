@@ -1,0 +1,15 @@
+<project default = "one">
+	<target name="three">
+		<echo> Running three </echo>
+	</target>
+	
+	<target name = "two" depends="three">
+	<echo> Running two </echo>
+	</target>
+	
+	<target name = "one" depends="two">
+	<echo> Running one </echo>
+	</target>
+</project>
+	
+	

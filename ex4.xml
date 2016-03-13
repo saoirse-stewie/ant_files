@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+	<project name="test" default="compile" basedir=".">
+		<property name="src" value="."/>
+		<property name="build" value="build"/>
+		
+		<target name="init">
+			<mkdir dir="javaCode/src"/>
+			<touch file = "javaCode/src/fileA.java"/>
+			<mkdir dir="${build}"/>
+		</target>
+
+		<target name="compile" depends="init">
+			<!-- Compile the java code -->
+			<javac srcdir="javaCode/src/"
+			destdir="${build}"
+			fork="true"
+			classpath="xyz.jar"
+			/>
+		</target>
+</project>

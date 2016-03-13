@@ -1,0 +1,9 @@
+<project default="hello">
+  <target name="hello">
+  <echo message = "hello world " />
+   <echo file="HelloWorld.txt" append="true">
+	"Hello world"
+	</echo>
+	
+  </target>
+</project>
